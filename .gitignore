@@ -1,0 +1,31 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!mvnw
+!mvnw.cmd
+.mvn/wrapper/maven-wrapper.properties
+
+# IDE specific files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+
+# Build tools and cache
+.mvn/
+.gradle/
+build/
+bin/
+
+# Environment and sensitive data
+.env
+.env.*
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+SETUP_GUIDE.md
