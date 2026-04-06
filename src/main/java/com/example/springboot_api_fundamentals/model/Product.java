@@ -1,19 +1,17 @@
-package com.example.springboot_api_fundamentals.dto;
+package com.example.springboot_api_fundamentals.model;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
-
-public class ProductDTO {
-
+public class Product {
     private Long id;
-
-    @NotBlank(message = "Name cannot be empty")
     private String name;
-
-    @Positive(message = "Price must be positive")
     private Double price;
-
     private String category;
+
+    public Product(Long id, String name, Double price, String category) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
